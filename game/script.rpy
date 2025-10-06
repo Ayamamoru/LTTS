@@ -34,5 +34,5 @@ label start:
     v "Your name does not matter."
     v "This is not your story."
     mc "??????????"
-
+    #ok i think it works now
     return
