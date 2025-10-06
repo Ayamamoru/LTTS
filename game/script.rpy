@@ -3,31 +3,36 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Eileen")
+define m = Character("Eileen")
+define mc = Character("[povname]", color="#be6ae6")
+define v = Character("???", color="#c8ffc8")
 
 
 # The game starts here.
 
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
 
-    scene bg room
+    v "Testing!"
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
+    $ povname = renpy.input("What is your name?", length=50)
+    $ povname = povname.strip()
 
-    show eileen happy
+    if not povname:
+        $ povname = "..."
 
-    # These display lines of dialogue.
+    mc "my name is-"
+    
 
-    e "You've created a new Ren'Py game."
+    if povname.lower() in ["manly", "manlybadasshero", "manly badass hero", "hero", "badasshero"]:
+        m "That's a funny coincidence..."
+        m "Perhaps you have an... empty soul?"
+        m "regardless..."
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+    $ povname = "..."
 
-    # This ends the game.
+    v "Your name does not matter."
+    v "This is not your story."
+    mc "??????????"
 
     return
