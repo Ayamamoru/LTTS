@@ -29,6 +29,11 @@ label start:
         m "Perhaps you have an... empty soul?"
         m "regardless..."
 
+    if povname.lower() in ["Kaylee", "kaylee", "Kay", "kay"]:
+        m "That's weird"
+        m "Is this... the person who goes by 'IS THAT KAYLEE FROM HIT GAME REAL LIFE?!'?."
+        m "regardless..."
+
     $ povname = "..."
 
     v "Your name does not matter."
