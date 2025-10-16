@@ -311,6 +311,8 @@ screen navigation():
 
         textbutton _("Preferences") action ShowMenu("preferences")
 
+        textbutton _("Credits") action ShowMenu("credits_screen")
+
         if _in_replay:
 
             textbutton _("End Replay") action EndReplay(confirm=True)
@@ -1137,6 +1139,46 @@ style help_label_text:
 ################################################################################
 ## Additional screens
 ################################################################################
+screen credits_screen():
+    tag menu
+    ## This use statement includes the game_menu screen inside this one. The
+    ## vbox child is then included inside the viewport inside the game_menu
+    ## screen.
+    use game_menu(_("Credits"), scroll="viewport"):
+        style_prefix "credits"
+        # Build your screen here
+
+        hbox:
+            spacing 50
+            
+            # Left Column
+            vbox:
+                xsize 0.5
+                text "The Team" color '#ffffff'
+                text "Developer: Mo" size 35
+                text "Artist: Mo" size 35
+                text "Writer: Also Mo" size 35
+                text "TLDR; This is a solo project!\n" size 35
+                
+                text "Content used" color '#ffffff'
+                text "Music:" size 25
+                text "SFX: All sfx used are accredited to Kenney (KenNL on reddit)\n" size 25
+                text "Fonts used are \n" size 20 color '#ffffffd2'
+
+            # Right Column  
+            vbox:
+                text "Special Thanks" color '#ffffff'
+                text "none yet...\n" size 30
+
+                text "Play Testers" color '#ffffff'
+                text "None for now" size 30
+                text "But uhm there will be" size 30
+                text "soon" size 30
+
+                text "Thank you for playing!" color '#ffffff'
+                text "Made with {color=#ff5242}<3{/color} by Mo AKA Selina Tung\n" size 25
+                text "\n\n\n"
+                text "LttS by Selina Tung is marked CC0 1.0" size 25 color '#ffffffb6'
 
 
 ## Confirm screen ##############################################################
