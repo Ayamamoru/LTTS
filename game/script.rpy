@@ -7,7 +7,7 @@ define m = Character("Eileen")
 define mc = Character("[povname]", color="#be6ae6")
 define v = Character("???", color="#c8ffc8")
 
-$ persistent.played_more = 0
+define persistent.played_more = 0
 
 init python:
     if persistent.played_more is None:
@@ -70,8 +70,8 @@ label start:
     "It<s rather quiet, between you and the silent rustling of the forest."
     "You come to your sense and pull yoursef off the ground, brushing off debris from your knit sweaer and jeans"
     "There's a dull pain at the back of your head. A concussion?"
-    "Regardless, you can't exactly remember how you came to tumble into the middle of the forest
-    Beyond the few memories which reminded you that you'd taken a shuttle bus through the country side and up a maontain, there wan't much left in your brain."
+    "Regardless, you can't exactly remember how you came to tumble into the middle of the forest"
+    "Beyond the few memories which reminded you that you'\d taken a shuttle bus through the country side and up a mountain, there wasn'\t much left in your brain."
     
     if persistent.played_more >= 1:
         "Good riddance, maybe"
