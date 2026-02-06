@@ -77,6 +77,9 @@ label start:
     "You struggle a little getting up, with the world still spinning... Not that it helps the nausea."
     "You steady yourself against a nearby tree, taking deep breaths to calm your breathing a little."
     "A fair attempt to keep the panic away."
+        if persistent.played_more >= 1:
+            "Good to know some things never change."
+            "A shame. It's a futile attempt."
     "Regardless, you can't exactly remember how you came to tumble into the middle of a forest"
 
     if persistent.played_more >= 1:
@@ -89,6 +92,35 @@ menu_1:
 label inventory_check:
     "There doesn't seem to be much on you."
     "The thought to check your wrist for your watch immediately crosses your mind."
+    "Thankfully, the familiar pressure of the watch on your wrist confirms that it's still there."
+    "There doesn't seem to be much else on you, but you find a small field notebook in your pocket, along with what you think was your favorite pen"
+    "Unfortunately, the notebook is nearly filled with scribbles and doodles, but there are at least 3 blank pages left."
+    "It may be usable later"
+
+    "Having nothing more to check, you place the notebook back in your pocket."
+    "You look around."
+    "You remember watching a video about survival on YouTube once, when you were rabbitholing through random videos."
+    "The main tip was to find a highway"
+    "There doesn't seem to be any highways around."
+    "There is a faint sound of running water nearby though."
+
+menu_2:
+    "Head towards the sound of water":
+        jump trail
+    "Look for a road":
+        jump highway
+
+label trail:
+    "There doesn't seem to be much around."
+    "Trees crowd your vision and the forest doesn't seem to be showing any signs of ending"
+    "You walk gingerly towards the sound of water."
+    "The sound grows louder as you walk closer"
+    "Eventually, it seems to be right ahead of you"
+    "..."
+    "..."
+    "There is no stream"
+    "The sound vanishes..."
+    "But, there is a faint trail where the stream should've been."
 
 
 
