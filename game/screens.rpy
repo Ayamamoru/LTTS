@@ -1158,10 +1158,14 @@ screen credits_screen():
                 text "Developer: Mo" size 35
                 text "Artist: Mo" size 35
                 text "Writer: Also Mo" size 35
-                text "TLDR; This is a solo project!\n" size 35
+                text "TLDR; This is a solo code project!\n" size 35
+                text "But we have some help on the audio portion of the game...\n" size 25
+                text "Kaylee Chau, as the voice of ####" size 35
+                text "Valérie Zegers, as the voice of ###" size 35
+                text "Selina Tung, as the voice of #####" size 35
                 
                 text "Content used" color '#ffffff'
-                text "Music:" size 25
+                text "Music: Accredited to Kymara Casmir!" size 25
                 text "SFX: All sfx used are accredited to Kenney (KenNL on reddit)\n" size 25
                 text "Fonts used are \n" size 20 color '#ffffffd2'
 

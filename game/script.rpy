@@ -63,16 +63,22 @@ label start:
     #ok i think it works now
 
     if persistent.played_more >= 1:
-        "Back again? Interesting"
-    "Damp leaves. Rustling trees, cool air, the sharp scent of earth"
-    "You find yourself off-train in a rural area."
-    "A steep tumble, maybe."
-    "It<s rather quiet, between you and the silent rustling of the forest."
-    "You come to your sense and pull yoursef off the ground, brushing off debris from your knit sweaer and jeans"
-    "There's a dull pain at the back of your head. A concussion?"
-    "Regardless, you can't exactly remember how you came to tumble into the middle of the forest"
-    "Beyond the few memories which reminded you that you'\d taken a shuttle bus through the country side and up a mountain, there wasn'\t much left in your brain."
-    
+        "Back again? No, please, not this..."
+    "A sharp headache. The pulsing kind. You know the feeling."
+    "A slight ringing in your ears, and a sense of nausea."
+    "Your intuition tells you that your vision will be fuzzy, once you open your eyes."
+    "You open your eyes, and sure enough, the world around you is blurry and out of focus."
+    "Even then though, there's something off about the environment."
+    "The air is thick and heavy, and the smell of damp earth fills your nostrils."
+    "Unease slowly sinks in... not too strong, but it's there."
+    "That familiar hot wave of anxiety washes over you... That feeling of being lost again."
+    "You try to recall how you got here, but your memory is hazy and fragmented."
+    "Frustrating as it is, you've gotten used to this feeling of memory loss"
+    "You struggle a little getting up, with the world still spinning... Not that it helps the nausea."
+    "You steady yourself against a nearby tree, taking deep breaths to calm your breathing a little."
+    "A fair attempt to keep the panic away."
+    "Regardless, you can't exactly remember how you came to tumble into the middle of a forest"
+
     if persistent.played_more >= 1:
         "Good riddance, maybe"
     #REVIEW - HEY SO THIS LOWK SUCKS>>> NEEDS A HUGE REWRITE
@@ -81,8 +87,8 @@ menu_1:
         jump inventory_check
 
 label inventory_check:
-    "A shame, your phone looks to be nearly dead and out of servive."
-    "Luckily, your watch is fine"
+    "There doesn't seem to be much on you."
+    "The thought to check your wrist for your watch immediately crosses your mind."
 
 
 
