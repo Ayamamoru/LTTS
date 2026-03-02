@@ -121,6 +121,18 @@ label trail:
     "There is no stream"
     "The sound vanishes..."
     "But, there is a faint trail where the stream should've been."
+    "Left without much choice, you follow the trail."
+    "There's... nothing remarkable about it."
+    "Something in the distance?"
+    "Looks like an old hiker's cottage"
+    "...Classic horror cliché"
+
+menu_3:
+    "Approach the cottage":
+        jump cottage
+    "Go back:"
+        
+    
 
 
 
