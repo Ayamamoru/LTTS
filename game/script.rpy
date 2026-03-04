@@ -130,9 +130,10 @@ label trail:
 menu_3:
     "Approach the cottage":
         jump cottage
-    "Go back:"
+    "Go back":
+        jump trail
         
-    
+label cottage:
 
 
 
