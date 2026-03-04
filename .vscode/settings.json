@@ -119,5 +119,8 @@
                 }
             }
         ]
-    }
+    },
+    "powermode.enabled": true,
+    "powermode.combo.location": "editor",
+    "powermode.shake.enabled": false
 }

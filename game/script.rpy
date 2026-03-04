@@ -131,10 +131,11 @@ menu_3:
     "Approach the cottage":
         jump cottage
     "Go back":
-        jump trail
+        jump back
         
-label cottage:
-
+label back:
+    "You decide to retrace your steps, heading back to to where you got up."
+    "It's getting dark, but you don't have much of a choice and you reallly would rather not go in that cottage."
 
 
     $ persistent.played_more += 1
