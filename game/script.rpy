@@ -6,6 +6,9 @@
 define m = Character("Eileen")
 define mc = Character("[povname]", color="#be6ae6")
 define v = Character("???", color="#c8ffc8")
+define dq = Character("...", color="#290338ff")
+define fq = Character("...", color="#610f0fff")
+define oq = Character("...", color= "#042c36ff")
 
 define persistent.played_more = 0
 
@@ -131,11 +134,34 @@ menu_3:
     "Approach the cottage":
         jump cottage
     "Go back":
-        jump back
+        jump back_church
         
-label back:
+label back_church:
+    #STUB - This needs some fleshing out! 
     "You decide to retrace your steps, heading back to to where you got up."
-    "It's getting dark, but you don't have much of a choice and you reallly would rather not go in that cottage."
+    "It's getting dark, but you don't have much of a choice and you really would rather not go in that cottage."
+    "In the dim light, the path slowly starts to fade fom vision."
+    "A light?"
+    "Not far, either."
+    "Might as well head there... not much other choice."
+    "..."
+    fq "Has it really been that long?"
+    dq "Strange as it is, it must be true."
+    oq "Hush, we must prepare the materials. The day has nearly ended."
+    fq "I will have Sparrow and Hare fetch the..."
+    fq "I feel strange"
+    dq "What is it?"
+    "You lean forward a little too far..."
+    "Three soulless black sockets meet your eyes"
+    dq "Ah"
+    oq "We can't bother with this, not when we must..."
+    "{i}It{/i} stops talking"
+    oq "If you could please leave us"
+    "It seems to be addressing you"
+    "A slight rustling..."
+    fq "Hare-!"
+    "Something hard meets the back of your head"
+    "A sickening crunch, and the world fades away"
 
 
     $ persistent.played_more += 1
